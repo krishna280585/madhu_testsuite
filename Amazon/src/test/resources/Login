@@ -1,0 +1,20 @@
+Feature: Amazon Signup
+  @register
+  Scenario: user Signup with valid details
+    Given user should be on Amazon home page
+    When user clicks the "sign_in" link
+    And user clicks  "Create your Amazon account" link
+    And user enters the name and email
+    And user enters the password and confirm password
+    And user clicks the Create your Amazon account button
+    Then user can successfully create an Amazon account with "Hello, krishna"
+   # And user should signoff
+
+  @signin
+  Scenario: user signin with valid credentials
+    Given user should be on Amazon home page
+    When user clicks the "sign_in" link
+   # And user enters the email "kk.madhuri111@gmail.com" and password "dhruvin09"
+    #And user clicks the sign_in button
+    #Then user can successfully signin
+    #And user should signoff
